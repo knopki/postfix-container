@@ -1,0 +1,15 @@
+/var/spool/postfix false root,0:101 0644 0755
+/var/spool/postfix/pid true root,0:0  0644 0755
+/var/spool/postfix/active true postfix,100:0 0644 0755
+/var/spool/postfix/bounce true postfix,100:0 0644 0755
+/var/spool/postfix/corrupt true postfix,100:0 0644 0755
+/var/spool/postfix/defer true postfix,100:0 0644 0755
+/var/spool/postfix/deferred true postfix,100:0 0644 0755
+/var/spool/postfix/flush true postfix,100:0 0644 0755
+/var/spool/postfix/hold true postfix,100:0 0644 0755
+/var/spool/postfix/incoming true postfix,100:0 0644 0755
+/var/spool/postfix/private true postfix,100:0 0644 0755
+/var/spool/postfix/saved true postfix,100:0 0644 0755
+/var/spool/postfix/trace true postfix,100:0 0644 0755
+/var/spool/postfix/maildrop true 100:102,100:102 0644 0755
+/var/spool/postfix/public true 100:102,100:102 0644 0755
