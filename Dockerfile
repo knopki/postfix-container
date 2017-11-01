@@ -1,8 +1,8 @@
 FROM alpine:3.6
 
 LABEL name="postfix-relay"
-LABEL version="1.0"
-LABEL release="1"
+LABEL version="3.2.4"
+LABEL release="2"
 LABEL architecture="x86_64"
 LABEL vendor="Sergey Korolev"
 
@@ -12,7 +12,7 @@ RUN \
 # s6 overlay
   gunzip -c /tmp/s6-overlay-amd64.tar.gz | tar -xf - -C / \
 # packages
-  && apk add --no-cache postfix bash \
+  && apk add --no-cache postfix \
 # postfix
   && postconf -e "smtputf8_enable = no"
 
