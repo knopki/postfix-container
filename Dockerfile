@@ -2,7 +2,7 @@ FROM alpine:3.6
 
 LABEL name="postfix-relay" \
   version="3.2.4" \
-  release="5" \
+  release="6" \
   architecture="x86_64" \
   vendor="Sergey Korolev"
 
