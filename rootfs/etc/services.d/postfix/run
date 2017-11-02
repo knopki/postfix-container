@@ -1,7 +1,10 @@
-#!/bin/sh
+#!/usr/bin/with-contenv sh
+
+postfix check 2>&1 || exit ${?}
 
 # Cleanup stale pids incase we hadn't exited cleanly
 rm -f /var/spool/postfix/pid/*
 
 # start postfix
+exec 2>&1
 exec /usr/lib/postfix/master -c /etc/postfix -d
