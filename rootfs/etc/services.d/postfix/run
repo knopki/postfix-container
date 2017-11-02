@@ -4,6 +4,7 @@ postfix check 2>&1 || exit ${?}
 
 # Cleanup stale pids incase we hadn't exited cleanly
 rm -f /var/spool/postfix/pid/*
+rm -f /var/lib/postfix/master.lock
 
 # start postfix
 exec 2>&1
