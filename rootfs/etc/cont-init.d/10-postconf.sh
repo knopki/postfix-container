@@ -6,6 +6,7 @@
 /usr/sbin/postmap /etc/postfix/relocated
 /usr/sbin/postmap /etc/postfix/transport
 /usr/sbin/postmap /etc/postfix/virtual
+/usr/sbin/postmap /etc/postfix/tls_policy
 
 
 
